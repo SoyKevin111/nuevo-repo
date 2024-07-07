@@ -1,1 +1,10 @@
 se envia?
+
+Pasos para Forkear en github
+
+Clonar el proyecto -> git clone {link}
+Anadir remote upstream una vez -> git remote add upstream {link}
+obtener cambios mas recientes del proyecto: git fetch upstream
+Fusionar los cambios del proyecto remoto en mi rama principal: git checkout main(posicionarse en la rama main)
+								git merge upstream/main
+Resolver manualmente conflictos (si s que los hay)
