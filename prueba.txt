@@ -1,1 +1,31 @@
 se envia?
+
+Pasos para Forkear en github
+
+1)//Para crear una copia del proyecto
+!Ubicate en el proyecto remoto al que deseas contribuir
+Crear la Copia (FORK)
+Ir al proyecto y presionar el boton que dice Fork, pones el nombre que le pondras al repositorio de copia y das a create fork
+ahora copias el enlace del proyecto y en algun directorio vacio pones:
+git clone {link} 
+y se Habra creado las copias, y has tus cambios y partes que te toca
+
+
+2)//Para cuando quieras traer los ultimos cambios del proyecto remoto
+Anadir remote upstream una vez -> git remote add upstream {link}
+obtener cambios mas recientes del proyecto: git fetch upstream
+Fusionar los cambios del proyecto remoto en mi rama principal: git checkout main(posicionarse en la rama main)
+								git merge upstream/main
+Resolver manualmente conflictos (si s que los hay)
+
+3)//Para cuando quieras enviar tus cambios al proyecto remoto
+haces git push origin main y se envian al repo remoto 
+(ojo aveces antes tiene que hacer el paso 2 para traer los ultimos cambios y que no entre en conflicto con los otros aportes al proyecto)
+
+Para enviar los cambios al repositorio al autor del proyecto
+!Te hubicas en la copia que creaste y vas a:
+ir a Pull Request /
+ 	New pull request /
+  despues se mostrara los commits que hiciste y que vas a enviar /
+	le das a create pull request denuevo /
+	Agregas el titulo de tu aporte y la descripcion y presionas create pull request, y se envia el repo original y ahi vere si aplico o no los cambios
